@@ -4,7 +4,8 @@ import redis
 # For standalone use.
 DUPEFILTER_KEY = 'dupefilter:%(timestamp)s'
 
-PIPELINE_KEY = '%(spider)s:items'
+# PIPELINE_KEY = '%(spider)s:items'
+PIPELINE_KEY = '%(spider)s:%(block_number)s'
 
 STATS_KEY = '%(spider)s:stats'
 

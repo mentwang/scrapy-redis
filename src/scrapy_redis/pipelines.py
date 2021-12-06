@@ -73,4 +73,4 @@ class RedisPipeline(object):
         and/or spider.
 
         """
-        return self.key % {'spider': spider.name}
+        return self.key % {'spider': spider.name, 'block_number': item["b_tx_number"]}
